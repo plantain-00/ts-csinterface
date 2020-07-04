@@ -1,0 +1,51 @@
+{
+  "name": "ts-csinterface",
+  "version": "0.0.1",
+  "description": "Adobe extensions CSInterface v7.0 library implementation in typescript (identical to original).",
+  "main": "nodejs/index.js",
+  "scripts": {
+    "build": "clean-scripts build",
+    "lint": "clean-scripts lint",
+    "test": "clean-scripts test",
+    "fix": "clean-scripts fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plantain-00/ts-csinterface.git"
+  },
+  "author": "York Yao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plantain-00/ts-csinterface/issues"
+  },
+  "homepage": "https://github.com/plantain-00/ts-csinterface#readme",
+  "devDependencies": {
+    "@microsoft/api-extractor": "7.9.1",
+    "@rollup/plugin-node-resolve": "8.1.0",
+    "@typescript-eslint/eslint-plugin": "3.5.0",
+    "@typescript-eslint/parser": "3.5.0",
+    "ava": "3.9.0",
+    "clean-scripts": "1.16.0",
+    "eslint": "7.4.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-plantain": "1.0.0",
+    "markdownlint-cli": "0.23.2",
+    "no-unused-export": "1.11.0",
+    "rimraf": "3.0.2",
+    "rollup": "2.18.2",
+    "rollup-plugin-uglify": "6.0.4",
+    "ts-node": "8.10.2",
+    "tsconfig-plantain": "0.0.1",
+    "type-coverage": "2.8.3",
+    "typescript": "3.9.6"
+  },
+  "dependencies": {
+    "tslib": "2"
+  },
+  "module": "browser/index.js",
+  "unpkg": "ts-csinterface.min.js",
+  "jsdelivr": "ts-csinterface.min.js",
+  "typeCoverage": {
+    "atLeast": 100
+  }
+}

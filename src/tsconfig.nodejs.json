@@ -1,0 +1,8 @@
+{
+  "extends": "tsconfig-plantain",
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "../dist/nodejs",
+    "module": "commonjs"
+  }
+}
