@@ -18,6 +18,5 @@ Adobe extensions CSInterface v7.0 library implementation in typescript (identica
 ## usage
 
 ```ts
-import TsCsinterface from "ts-csinterface";
-// <script src="./node_modules/ts-csinterface/ts-csinterface.min.js"></script>
+import { CSInterface, CSEvent } from "ts-csinterface";
 ```

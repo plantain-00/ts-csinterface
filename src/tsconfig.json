@@ -1,0 +1,14 @@
+{
+  "extends": "tsconfig-plantain",
+  "compilerOptions": {
+    "target": "es5",
+    "declaration": true,
+    "outDir": "../dist",
+    "noImplicitAny": false,
+    "removeComments": false,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "module": "commonjs"
+  }
+}

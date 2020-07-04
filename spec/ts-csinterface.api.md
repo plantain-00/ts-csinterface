@@ -4,11 +4,216 @@
 
 ```ts
 
-// @public (undocumented)
-class TsCsinterface {
+// @public
+export class ApiVersion {
+    constructor(major: number, minor: number, micro: number);
+    // (undocumented)
+    major: number;
+    // (undocumented)
+    micro: number;
+    // (undocumented)
+    minor: number;
 }
 
-export default TsCsinterface;
+// @public
+export class AppSkinInfo {
+    constructor(baseFontFamily: string, baseFontSize: number, appBarBackgroundColor: UIColor, panelBackgroundColor: UIColor, appBarBackgroundColorSRGB: UIColor, panelBackgroundColorSRGB: UIColor, systemHighlightColor: UIColor);
+    // (undocumented)
+    appBarBackgroundColor: UIColor;
+    // (undocumented)
+    appBarBackgroundColorSRGB: UIColor;
+    // (undocumented)
+    baseFontFamily: string;
+    // (undocumented)
+    baseFontSize: number;
+    // (undocumented)
+    panelBackgroundColor: UIColor;
+    // (undocumented)
+    panelBackgroundColorSRGB: UIColor;
+    // (undocumented)
+    systemHighlightColor: UIColor;
+}
+
+// @public
+export class ColorType {
+    static readonly GRADIENT: string;
+    static readonly NONE: string;
+    static readonly RGB: string;
+}
+
+// @public
+export class ContextMenuItemStatus {
+    constructor(menuItemID: string, enabled: boolean, checked: boolean);
+    // (undocumented)
+    checked: boolean;
+    // (undocumented)
+    enabled: boolean;
+    // (undocumented)
+    menuItemID: string;
+}
+
+// @public
+export class CSEvent {
+    constructor(type: string, scope: string, appId?: string | undefined, extensionId?: string | undefined);
+    // (undocumented)
+    appId?: string | undefined;
+    data: string;
+    // (undocumented)
+    extensionId?: string | undefined;
+    // (undocumented)
+    scope: string;
+    // (undocumented)
+    type: string;
+}
+
+// @public
+export class CSInterface {
+    addEventListener(type: string, listener: any, obj?: any): void;
+    closeExtension(): void;
+    dispatchEvent(event: CSEvent): void;
+    dumpInstallationInfo(): string;
+    evalScript(script: string, callback: (executionResult: string) => void): void;
+    getApplicationID(): string;
+    getCurrentApiVersion(): ApiVersion;
+    getExtensionID(): string;
+    getExtensions(extensionIds: string[]): any;
+    getHostCapabilities(): any;
+    getHostEnvironment(): {
+        appUILocale: string;
+        appLocale: string;
+        appVersion: string;
+        appName: string;
+    };
+    getNetworkPreferences(): any;
+    getOSInformation(): string;
+    getScaleFactor(): number;
+    getSystemPath(pathType: string): string;
+    getWindowTitle(): string;
+    hostEnvironment: any;
+    initResourceBundle(): any;
+    isWindowVisible(): boolean;
+    openURLInDefaultBrowser(url: string): number;
+    registerInvalidCertificateCallback(callback: () => void): any;
+    registerKeyEventsInterest(keyEventsInterest: string): any;
+    removeEventListener(type: string, listener: any, obj?: any): void;
+    requestOpenExtension(extensionId: string, params: string): void;
+    resizeContent(width: number, height: number): void;
+    setContextMenu(menu: string, callback: (clikedMenuId: string) => unknown): void;
+    setContextMenuByJSON(menu: string, callback: (clikedMenuId: string) => unknown): void;
+    setPanelFlyoutMenu(menu: string): void;
+    setScaleFactorChangedHandler(handler: () => void): void;
+    setWindowTitle(title: string): void;
+    readonly THEME_COLOR_CHANGED_EVENT: string;
+    updateContextMenuItem(menuItemID: string, enabled: boolean, checked: boolean): void;
+    updatePanelMenuItem(menuItemLabel: string, enabled: boolean, checked: boolean): boolean;
+}
+
+// @public
+export class Direction {
+    constructor(x: number, y: number);
+    // (undocumented)
+    x: number;
+    // (undocumented)
+    y: number;
+}
+
+// @public
+export class GradientColor {
+    constructor(type: string, direction: Direction, numStops: number, arrGradientStop: GradientStop[]);
+    // (undocumented)
+    arrGradientStop: GradientStop[];
+    // (undocumented)
+    direction: Direction;
+    // (undocumented)
+    numStops: number;
+    // (undocumented)
+    type: string;
+}
+
+// @public
+export class GradientStop {
+    constructor(offset: number, rgbColor: RGBColor);
+    // (undocumented)
+    offset: number;
+    // (undocumented)
+    rgbColor: RGBColor;
+}
+
+// @public
+export class HostCapabilities {
+    constructor(EXTENDED_PANEL_MENU: boolean, EXTENDED_PANEL_ICONS: boolean, DELEGATE_APE_ENGINE: boolean, SUPPORT_HTML_EXTENSIONS: boolean, DISABLE_FLASH_EXTENSIONS: boolean);
+    // (undocumented)
+    DELEGATE_APE_ENGINE: boolean;
+    // (undocumented)
+    DISABLE_FLASH_EXTENSIONS: boolean;
+    // (undocumented)
+    EXTENDED_PANEL_ICONS: boolean;
+    // (undocumented)
+    EXTENDED_PANEL_MENU: boolean;
+    // (undocumented)
+    SUPPORT_HTML_EXTENSIONS: boolean;
+}
+
+// @public
+export class HostEnvironment {
+    constructor(appName: string, appVersion: any, appLocale: any, appUILocale: any, appId: string, isAppOnline: boolean, appSkinInfo: AppSkinInfo);
+    // (undocumented)
+    appId: string;
+    // (undocumented)
+    appLocale: any;
+    // (undocumented)
+    appName: string;
+    // (undocumented)
+    appSkinInfo: AppSkinInfo;
+    // (undocumented)
+    appUILocale: any;
+    // (undocumented)
+    appVersion: any;
+    // (undocumented)
+    isAppOnline: boolean;
+}
+
+// @public
+export class MenuItemStatus {
+    constructor(menuItemLabel: string, enabled: boolean, checked: boolean);
+    // (undocumented)
+    checked: boolean;
+    // (undocumented)
+    enabled: boolean;
+    // (undocumented)
+    menuItemLabel: string;
+}
+
+// @public
+export class RGBColor {
+    constructor(red: number, green: number, blue: number, alpha: number);
+    // (undocumented)
+    alpha: number;
+    // (undocumented)
+    blue: number;
+    // (undocumented)
+    green: number;
+    // (undocumented)
+    red: number;
+}
+
+// @public
+export class SystemPath {
+    static readonly APPLICATION: string;
+    static readonly COMMON_FILES: string;
+    static readonly EXTENSION: string;
+    static readonly HOST_APPLICATION: string;
+    static readonly MY_DOCUMENTS: string;
+    static readonly USER_DATA: string;
+}
+
+// @public
+export class UIColor {
+    constructor(type?: number, antialiasLevel?: any, color?: RGBColor | GradientColor);
+    antialiasLevel: any;
+    color?: RGBColor | GradientColor;
+    type?: number;
+}
 
 
 // (No @packageDocumentation comment for this package)

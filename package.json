@@ -2,7 +2,7 @@
   "name": "ts-csinterface",
   "version": "0.0.1",
   "description": "Adobe extensions CSInterface v7.0 library implementation in typescript (identical to original).",
-  "main": "nodejs/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "clean-scripts build",
     "lint": "clean-scripts lint",
@@ -30,10 +30,7 @@
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-plantain": "1.0.0",
     "markdownlint-cli": "0.23.2",
-    "no-unused-export": "1.11.0",
     "rimraf": "3.0.2",
-    "rollup": "2.18.2",
-    "rollup-plugin-uglify": "6.0.4",
     "ts-node": "8.10.2",
     "tsconfig-plantain": "0.0.1",
     "type-coverage": "2.8.3",
@@ -46,6 +43,6 @@
   "unpkg": "ts-csinterface.min.js",
   "jsdelivr": "ts-csinterface.min.js",
   "typeCoverage": {
-    "atLeast": 100
+    "atLeast": 74.75
   }
 }
