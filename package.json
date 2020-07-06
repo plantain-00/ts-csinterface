@@ -36,9 +36,6 @@
     "type-coverage": "2.8.3",
     "typescript": "3.9.6"
   },
-  "dependencies": {
-    "tslib": "2"
-  },
   "module": "browser/index.js",
   "unpkg": "ts-csinterface.min.js",
   "jsdelivr": "ts-csinterface.min.js",

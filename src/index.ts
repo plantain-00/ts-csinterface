@@ -36,7 +36,7 @@ export class CSInterface {
    * function OnAppThemeColorChanged(event)
    * {
    *    // Should get a latest HostEnvironment object from application.
-   *    let skinInfo = JSON.parse(window.__adobe_cep__.getHostEnvironment()).appSkinInfo;
+   *    var skinInfo = JSON.parse(window.__adobe_cep__.getHostEnvironment()).appSkinInfo;
    *    // Gets the style information such as color info from the skinInfo,
    *    // and redraw all UI controls of your extension according to the style info.
    * }
@@ -95,7 +95,7 @@ export class CSInterface {
    */
   evalScript(script: string, callback: (executionResult: string) => void) {
     if (callback === null || callback === undefined) {
-      callback = (result: any) => ({});
+      callback = (result: any) => undefined;
     }
     (<any>window).__adobe_cep__.evalScript(script, callback);
   };
