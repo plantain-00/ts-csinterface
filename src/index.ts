@@ -355,7 +355,7 @@ export class CSInterface {
    *
    * @return extension ID.
    */
-  getExtensionID(): string {
+  getExtensionID<T extends string>(): T {
     return (<any>window).__adobe_cep__.getExtensionId();
   };
 

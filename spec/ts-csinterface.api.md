@@ -75,7 +75,7 @@ export class CSInterface {
     evalScript(script: string, callback: (executionResult: string) => void): void;
     getApplicationID(): string;
     getCurrentApiVersion(): ApiVersion;
-    getExtensionID(): string;
+    getExtensionID<T extends string>(): T;
     getExtensions(extensionIds: string[]): any;
     getHostCapabilities(): any;
     getHostEnvironment(): {
