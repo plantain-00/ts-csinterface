@@ -4,7 +4,6 @@ Adobe extensions CSInterface v7.0 library implementation in typescript (identica
 
 [![Dependency Status](https://david-dm.org/plantain-00/ts-csinterface.svg)](https://david-dm.org/plantain-00/ts-csinterface)
 [![devDependency Status](https://david-dm.org/plantain-00/ts-csinterface/dev-status.svg)](https://david-dm.org/plantain-00/ts-csinterface#info=devDependencies)
-[![Build Status: Linux](https://travis-ci.org/plantain-00/ts-csinterface.svg?branch=master)](https://travis-ci.org/plantain-00/ts-csinterface)
 [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/github/plantain-00/ts-csinterface?branch=master&svg=true)](https://ci.appveyor.com/project/plantain-00/ts-csinterface/branch/master)
 ![Github CI](https://github.com/plantain-00/ts-csinterface/workflows/Github%20CI/badge.svg)
 [![npm version](https://badge.fury.io/js/ts-csinterface.svg)](https://badge.fury.io/js/ts-csinterface)
