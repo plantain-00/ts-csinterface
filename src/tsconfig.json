@@ -8,6 +8,7 @@
     "removeComments": false,
     "noLib": false,
     "preserveConstEnums": true,
+    "noUncheckedIndexedAccess": false,
     "suppressImplicitAnyIndexErrors": true,
     "module": "commonjs"
   }
