@@ -21,14 +21,14 @@
   },
   "homepage": "https://github.com/plantain-00/ts-csinterface#readme",
   "devDependencies": {
-    "@microsoft/api-extractor": "7.18.17",
+    "@microsoft/api-extractor": "7.18.19",
     "@rollup/plugin-node-resolve": "13.0.6",
-    "@typescript-eslint/eslint-plugin": "5.3.0",
-    "@typescript-eslint/parser": "5.3.0",
+    "@typescript-eslint/eslint-plugin": "5.4.0",
+    "@typescript-eslint/parser": "5.4.0",
     "ava": "3.15.0",
     "clean-release": "2.15.2",
     "clean-scripts": "1.20.2",
-    "eslint": "8.1.0",
+    "eslint": "8.2.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-plantain": "2.0.0",
     "markdownlint-cli": "0.29.0",
@@ -36,7 +36,7 @@
     "ts-node": "10.4.0",
     "tsconfig-plantain": "0.0.2",
     "type-coverage": "2.19.0",
-    "typescript": "4.4.4"
+    "typescript": "4.5.2"
   },
   "module": "browser/index.js",
   "unpkg": "ts-csinterface.min.js",
